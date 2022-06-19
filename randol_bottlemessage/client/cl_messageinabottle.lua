@@ -47,8 +47,8 @@ CreateThread(function()
 end)
 
 -- Remove chest on resource stop
-AddEventHandler('onResourceStop', function(r) 
-	if r == GetCurrentResourceName() then
+AddEventHandler('onResourceStop', function(resource) 
+	if resource == GetCurrentResourceName() then
         DeleteEntity(chest)
         DeleteEntity(gold)
 	end 
