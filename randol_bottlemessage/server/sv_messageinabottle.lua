@@ -53,8 +53,8 @@ RegisterServerEvent('randol_mib:server:lootchest', function ()
     Wait(500)
 
     for i, v in ipairs(Config.Items) do
-        local penis = math.random(5, 8)
-        Player.Functions.AddItem(v, penis)
+        local amt = math.random(5, 8)
+        Player.Functions.AddItem(v, amt)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[v], 'add')
         -- Insert Reward log here yourself or don't..
     end
