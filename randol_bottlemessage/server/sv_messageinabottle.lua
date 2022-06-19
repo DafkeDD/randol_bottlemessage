@@ -20,14 +20,14 @@ end)
 QBCore.Functions.CreateUseableItem("bottlemessage", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
-		TriggerClientEvent('randol_mib:client:pulloutmessage', source)
+	TriggerClientEvent('randol_mib:client:pulloutmessage', source)
     end
 end)
 
 QBCore.Functions.CreateUseableItem("message", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
- 		TriggerClientEvent('randol_mib:client:setloc', source)
+ 	TriggerClientEvent('randol_mib:client:setloc', source)
     end
 end)
 
